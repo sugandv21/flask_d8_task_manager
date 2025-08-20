@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": [
     "http://localhost:5173",  
-    "https://YOUR-NETLIFY-APP.netlify.app" 
+    "https://taskmanagerd8.netlify.app" 
 ]}})
 
 tasks = [
@@ -37,4 +37,5 @@ def delete_task(task_id):
 
 if __name__ == "__main__":
     app.run(debug=False)
+
 
