@@ -6,7 +6,7 @@ function App() {
   const [newTask, setNewTask] = useState("");
   const [alert, setAlert] = useState(null);
 
-  const API_BASE = "http://127.0.0.1:5000"; 
+  const API_BASE = "https://flask-d8-task-manager.onrender.com"; 
 
   const fetchTasks = async () => {
     const response = await fetch(`${API_BASE}/api/tasks`);
