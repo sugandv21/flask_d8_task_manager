@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">📋 Task Manager</h2>
+      <h2 className="text-center mb-4">Task Manager</h2>
 
       {alert && (
         <div className={`alert alert-${alert.type}`} role="alert">
